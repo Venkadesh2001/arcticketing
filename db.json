@@ -7692,7 +7692,7 @@
           {
             "islookup": true,
             "masterid": "E66E5177-DFD2-48A5-BBDE-C8891C37F942",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Open\"},{\"optionid\":\"1008\",\"optionvalue\":\"Close\"},{\"optionid\":\"1009\",\"optionvalue\":\"Resolve\"},{\"optionid\":\"1010\",\"optionvalue\":\"In-Progress\"},{\"optionid\":\"1011\",\"optionvalue\":\"Approve\"},{\"optionid\":\"1012\",\"optionvalue\":\"Reject\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Open\"},{\"optionid\":\"1008\",\"optionvalue\":\"Close\"},{\"optionid\":\"1009\",\"optionvalue\":\"Resolved\"},{\"optionid\":\"1010\",\"optionvalue\":\"In-Progress\"},{\"optionid\":\"1011\",\"optionvalue\":\"Approve\"},{\"optionid\":\"1012\",\"optionvalue\":\"Reject\"}]",
             "groupvalue": {}
           },
           {
@@ -7711,6 +7711,42 @@
             "islookup": true,
             "masterid": "E66E5177-DFD2-48A5-BBDE-C8891C37F946",
             "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Chitra\"},{\"optionid\":\"1008\",\"optionvalue\":\"DRS\"},{\"optionid\":\"1009\",\"optionvalue\":\"Gopinath\"},{\"optionid\":\"1010\",\"optionvalue\":\"Kiran\"},{\"optionid\":\"1011\",\"optionvalue\":\"Ravishankar\"},{\"optionid\":\"1012\",\"optionvalue\":\"Santhosh\"},{\"optionid\":\"1013\",\"optionvalue\":\"Senthil\"},{\"optionid\":\"1014\",\"optionvalue\":\"Eric\"},{\"optionid\":\"1015\",\"optionvalue\":\"Aarthi\"},{\"optionid\":\"1016\",\"optionvalue\":\"Annamalai\"},{\"optionid\":\"1019\",\"optionvalue\":\"Naveen\"},{\"optionid\":\"1020\",\"optionvalue\":\"Lakshman\"},{\"optionid\":\"1021\",\"optionvalue\":\"Yuvaraj\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33333",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Input text\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33334",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Dolly\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33335",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"IT\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33336",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"HelpDesk\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33337",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"CMS\"}]",
+            "groupvalue": {}
+          },
+          {
+            "islookup": true,
+            "masterid": "33338",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Lowes PPG Report Tracker Daily Data Needed\"}]",
             "groupvalue": {}
           }
         ]
@@ -7884,7 +7920,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic05",
+                  "id": "tic06",
                   "name": "Created By",
                   "lablekey": "entity-jobtitle-lbl",
                   "columnwidth": 50,
@@ -7903,7 +7939,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic06",
+                  "id": "tic07",
                   "name": "Assigned To",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
@@ -7922,18 +7958,18 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic07",
-                  "name": "LastUpdate",
+                  "id": "tic08",
+                  "name": "Last Modified",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
                   "seqno": 1,
                   "masterid": "",
-                  "controltype": "date",
-                  "attrtype": "date",
+                  "controltype": "text",
+                  "attrtype": "text",
                   "currencytype": null,
-                  "api_name": "LastUpdated",
+                  "api_name": "DisplayName",
                   "visible": true,
-                  "displayapiname": "LastUpdate",
+                  "displayapiname": "LastModified",
                   "inlineeditable": null,
                   "istitle": false,
                   "ischeckbox":false,
@@ -7941,7 +7977,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic08",
+                  "id": "tic09",
                   "name": "Overdue in days",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
@@ -7956,6 +7992,25 @@
                   "inlineeditable": null,
                   "ischeckbox":false,
                   "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic10",
+                  "name": "Last Modified On",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "date",
+                  "attrtype": "date",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "LastModifiedOn",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "ischeckbox":false,
                   "isdate": false,
                   "islookup": false
                 }
@@ -8187,7 +8242,7 @@
           "masterid": "",
           "controltype": "textbox",
           "attrtype": "text",
-          "api_name": "LastUpdate",
+          "api_name": "LastModified",
           "columnwidth": 50
         },
         {
@@ -8197,6 +8252,15 @@
           "controltype": "textbox",
           "attrtype": "text",
           "api_name": "Approver",
+          "columnwidth": 50
+        }, 
+        {
+          "id": "tic10",
+          "seqno": 1,
+          "masterid": "",
+          "controltype": "date",
+          "attrtype": "date",
+          "api_name": "LastModifiedOn",
           "columnwidth": 50
         }
       ]
@@ -8214,8 +8278,9 @@
           "AssignedTo": "Maria Lawrence",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "LastModified": "Robert Fath",
+          "Approver": "0",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576848",
@@ -8226,8 +8291,9 @@
           "AssignedTo": "Maria Lawrence",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Robert Fath",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576846",
@@ -8238,8 +8304,9 @@
           "AssignedTo": "Imran Khan A",
           "Priority": "High",
           "Status": "Hold",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0 Hrs"
+          "Approver": "0 Hrs",
+          "LastModified": "Robert Fath",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576839",
@@ -8250,8 +8317,9 @@
           "AssignedTo": "Imran Khan A",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "1 days ago"
+          "Approver": "1 days ago",
+          "LastModified": "Robert Fath",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576833",
@@ -8262,8 +8330,9 @@
           "AssignedTo": "Maria Lawrence",
           "Priority": "High",
           "Status": "In Progress",
-          "LastUpdate": "12/26/2024",
-          "Approver": "5 Days"
+          "Approver": "5 Days",
+          "LastModified": "Preston Parker",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576655",
@@ -8274,8 +8343,9 @@
           "AssignedTo": "Karthik Paneerselvam",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Karthik Paneerselvam",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "576569",
@@ -8286,8 +8356,9 @@
           "AssignedTo": "Nicolas Hartman",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Nicolas Hartman",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "556462",
@@ -8298,8 +8369,9 @@
           "AssignedTo": "Ranjith M",
           "Priority": "High",
           "Status": "Hold",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Prabhakaran S",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "546149",
@@ -8310,8 +8382,9 @@
           "AssignedTo": "Preston Parker",
           "Priority": "Medium",
           "Status": "In Progress",
-          "LastUpdate": "12/26/2024",
-          "Approver": "75 Days"
+          "Approver": "75 Days",
+          "LastModified": "Preston Parker",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "546075",
@@ -8322,8 +8395,9 @@
           "AssignedTo": "Preston Parker",
           "Priority": "High",
           "Status": "In Progress",
-          "LastUpdate": "12/26/2024",
-          "Approver": "83 Days"
+          "Approver": "83 Days",
+          "LastModified": "Cindy H",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "546059",
@@ -8334,8 +8408,9 @@
           "AssignedTo": "Karthik Paneerselvam",
           "Priority": "Critical",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "77 Days"
+          "Approver": "77 Days",
+          "LastModified": "Nanda Kishore R",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545971",
@@ -8346,8 +8421,9 @@
           "AssignedTo": "Prabhakaran S",
           "Priority": "Medium",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "92 Days"
+          "Approver": "92 Days",
+          "LastModified": "Prabhakaran S",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545935",
@@ -8358,8 +8434,9 @@
           "AssignedTo": "Prabhakaran S",
           "Priority": "Medium",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "96 Days"
+          "Approver": "96 Days",
+          "LastModified": "Nanda Kishore R",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545930",
@@ -8370,8 +8447,9 @@
           "AssignedTo": "Karthik K",
           "Priority": "Low",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Vignesh Murugaraj",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545901",
@@ -8382,8 +8460,9 @@
           "AssignedTo": "Prabhakaran S",
           "Priority": "Low",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Vignesh Murugaraj",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545808",
@@ -8394,8 +8473,9 @@
           "AssignedTo": "Ajaykrishna J",
           "Priority": "Medium",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Sarath MG",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545749",
@@ -8406,8 +8486,9 @@
           "AssignedTo": "Ajaykrishna J",
           "Priority": "Medium",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Nanda Kishore R",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545707",
@@ -8418,8 +8499,9 @@
           "AssignedTo": "Nicolas Hartman",
           "Priority": "Critical",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0"
+          "Approver": "0",
+          "LastModified": "Nicolas Hartman",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545706",
@@ -8430,8 +8512,9 @@
           "AssignedTo": "Maria Lawrence",
           "Priority": "High",
           "Status": "Hold",
-          "LastUpdate": "12/26/2024",
-          "Approver": "111 days"
+          "Approver": "111 days",
+          "LastModified": "Cindy H",
+          "LastModifiedOn": "12/26/2024"
         },
         {
           "id": "545616",
@@ -8442,8 +8525,9 @@
           "AssignedTo": "Ajaykrishna J",
           "Priority": "High",
           "Status": "Resolved",
-          "LastUpdate": "12/26/2024",
-          "Approver": "0 days"
+          "Approver": "0 days",
+          "LastModified": "Ajaykrishna J",
+          "LastModifiedOn": "12/26/2024"
         }
       ],
 
