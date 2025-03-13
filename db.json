@@ -7817,6 +7817,14 @@
                 "isselected": false,
                 "owner": "system",
                 "seqno": 113
+              },
+              {
+                "datasetid": "data005",
+                "title": "Team-Based List View",
+                "isdefault": true,
+                "isselected": false,
+                "owner": "system",
+                "seqno": 114
               }
             ],
             "config": {
@@ -7861,7 +7869,7 @@
                 },
                 {
                   "id": "tic02",
-                  "name": "Department",
+                  "name": "Team",
                   "lablekey": "entity-dept-lbl",
                   "columnwidth": 50,
                   "seqno": 1,
@@ -7881,6 +7889,65 @@
                 
                 {
                   "id": "tic03",
+                  "name": "Priority",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "textbox",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "Priority",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                
+                {
+                  "id": "tic04",
+                  "name": "Mode",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "textbox",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "Mode",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                
+                {
+                  "id": "tic05",
+                  "name": "Category",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "textbox",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "Category",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic06",
                   "name": "Type",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
@@ -7899,26 +7966,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic04",
-                  "name": "Priority",
-                  "lablekey": "entity-name-lbl",
-                  "columnwidth": 50,
-                  "seqno": 1,
-                  "masterid": "",
-                  "controltype": "textbox",
-                  "attrtype": "text",
-                  "currencytype": null,
-                  "api_name": "DisplayName",
-                  "visible": true,
-                  "displayapiname": "Priority",
-                  "inlineeditable": null,
-                  "ischeckbox":false,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "tic05",
+                  "id": "tic07",
                   "name": "Status",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
@@ -7937,7 +7985,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic06",
+                  "id": "tic08",
                   "name": "Created By",
                   "lablekey": "entity-jobtitle-lbl",
                   "columnwidth": 50,
@@ -7956,7 +8004,7 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic07",
+                  "id": "tic09",
                   "name": "Assigned To",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
@@ -7975,27 +8023,8 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic08",
-                  "name": "Last Modified",
-                  "lablekey": "entity-name-lbl",
-                  "columnwidth": 50,
-                  "seqno": 1,
-                  "masterid": "",
-                  "controltype": "text",
-                  "attrtype": "text",
-                  "currencytype": null,
-                  "api_name": "DisplayName",
-                  "visible": true,
-                  "displayapiname": "LastModified",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "ischeckbox":false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "tic09",
-                  "name": "Overdue in days",
+                  "id": "tic10",
+                  "name": "Last Update",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
                   "seqno": 1,
@@ -8013,21 +8042,116 @@
                   "islookup": false
                 },
                 {
-                  "id": "tic10",
-                  "name": "Last Modified On",
+                  "id": "tic11",
+                  "name": "Last Comment",
                   "lablekey": "entity-name-lbl",
                   "columnwidth": 50,
                   "seqno": 1,
                   "masterid": "",
-                  "controltype": "date",
-                  "attrtype": "date",
+                  "controltype": "text",
+                  "attrtype": "text",
                   "currencytype": null,
                   "api_name": "DisplayName",
                   "visible": true,
-                  "displayapiname": "LastModifiedOn",
+                  "displayapiname": "LastComment",
                   "inlineeditable": null,
-                  "istitle": false,
                   "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic12",
+                  "name": "Days Open",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "text",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "DaysOpen",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic13",
+                  "name": "Overdue in days",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "text",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "Overdueindays",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic14",
+                  "name": "Alerts Sent",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "text",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "AlertsSent",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic15",
+                  "name": "Reopend On",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "text",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "ReopendOn",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "tic16",
+                  "name": "Source",
+                  "lablekey": "entity-name-lbl",
+                  "columnwidth": 50,
+                  "seqno": 1,
+                  "masterid": "",
+                  "controltype": "text",
+                  "attrtype": "text",
+                  "currencytype": null,
+                  "api_name": "DisplayName",
+                  "visible": true,
+                  "displayapiname": "Source",
+                  "inlineeditable": null,
+                  "ischeckbox":false,
+                  "istitle": false,
                   "isdate": false,
                   "islookup": false
                 }
@@ -8297,7 +8421,14 @@
           "Status": "Resolved",
           "LastModified": "Robert Fath",
           "Approver": "0",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576848",
@@ -8310,7 +8441,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Robert Fath",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576846",
@@ -8323,7 +8461,14 @@
           "Status": "Hold",
           "Approver": "0 Hrs",
           "LastModified": "Robert Fath",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576839",
@@ -8336,7 +8481,14 @@
           "Status": "Resolved",
           "Approver": "1 days ago",
           "LastModified": "Robert Fath",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576833",
@@ -8349,7 +8501,14 @@
           "Status": "In Progress",
           "Approver": "5 Days",
           "LastModified": "Preston Parker",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576655",
@@ -8362,7 +8521,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Karthik Paneerselvam",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "576569",
@@ -8375,7 +8541,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Nicolas Hartman",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "556462",
@@ -8388,7 +8561,14 @@
           "Status": "Hold",
           "Approver": "0",
           "LastModified": "Prabhakaran S",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "546149",
@@ -8401,7 +8581,14 @@
           "Status": "In Progress",
           "Approver": "75 Days",
           "LastModified": "Preston Parker",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "546075",
@@ -8414,7 +8601,14 @@
           "Status": "In Progress",
           "Approver": "83 Days",
           "LastModified": "Cindy H",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "546059",
@@ -8427,7 +8621,14 @@
           "Status": "Resolved",
           "Approver": "77 Days",
           "LastModified": "Nanda Kishore R",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545971",
@@ -8440,7 +8641,14 @@
           "Status": "Resolved",
           "Approver": "92 Days",
           "LastModified": "Prabhakaran S",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545935",
@@ -8453,7 +8661,14 @@
           "Status": "Resolved",
           "Approver": "96 Days",
           "LastModified": "Nanda Kishore R",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "12/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545930",
@@ -8466,7 +8681,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Vignesh Murugaraj",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545901",
@@ -8479,7 +8701,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Vignesh Murugaraj",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545808",
@@ -8492,7 +8721,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Sarath MG",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545749",
@@ -8505,7 +8741,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Nanda Kishore R",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545707",
@@ -8518,7 +8761,14 @@
           "Status": "Resolved",
           "Approver": "0",
           "LastModified": "Nicolas Hartman",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545706",
@@ -8531,7 +8781,14 @@
           "Status": "Hold",
           "Approver": "111 days",
           "LastModified": "Cindy H",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         },
         {
           "id": "545616",
@@ -8544,7 +8801,14 @@
           "Status": "Resolved",
           "Approver": "0 days",
           "LastModified": "Ajaykrishna J",
-          "LastModifiedOn": "12/26/2024"
+          "LastModifiedOn": "12/26/2024",
+          "Mode": "Internal",
+          "Category": "Hardware/Performance",
+          "LastComment": "11/24/2024",
+          "DaysOpen": "0",
+          "Overdueindays":"0",
+          "AlertsSent":"Critical",
+          "ReopendOn": "12/26/2024"
         }
       ],
 
