@@ -7716,7 +7716,7 @@
           {
             "islookup": true,
             "masterid": "33333",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Input text\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Ticket001\"}]",
             "groupvalue": {}
           },
           {
@@ -7734,13 +7734,13 @@
           {
             "islookup": true,
             "masterid": "33336",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"HelpDesk\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"External Type\"},{\"optionid\":\"1008\",\"optionvalue\":\"Internal Type\"}]",
             "groupvalue": {}
           },
           {
             "islookup": true,
             "masterid": "33337",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Internal\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Internal and External\"}]",
             "groupvalue": {}
           },
           {
@@ -7752,13 +7752,13 @@
           {
             "islookup": true,
             "masterid": "33327",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"IT Support Team\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"IT & Support Team\"},{\"optionid\":\"1008\",\"optionvalue\":\"Billing Team\"},{\"optionid\":\"1009\",\"optionvalue\":\"Sales Team\"},{\"optionid\":\"10010\",\"optionvalue\":\"Product Team\"},{\"optionid\":\"10011\",\"optionvalue\":\"Account Team\"},{\"optionid\":\"10012\",\"optionvalue\":\"HR\"}]",
             "groupvalue": {}
           },
           {
             "islookup": true,
             "masterid": "33328",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Hardware / Performance\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"General Inquiry\"},{\"optionid\":\"1008\",\"optionvalue\":\"Order Status\"},{\"optionid\":\"1009\",\"optionvalue\":\"Account Information\"},{\"optionid\":\"10010\",\"optionvalue\":\"Bug Report\"},{\"optionid\":\"10011\",\"optionvalue\":\"Software Issue\"},{\"optionid\":\"10012\",\"optionvalue\":\"Hardware Issue\"},{\"optionid\":\"10013\",\"optionvalue\":\"High Priority Issue\"},{\"optionid\":\"10014\",\"optionvalue\":\"UnResolved Ticket\"},{\"optionid\":\"10015\",\"optionvalue\":\"SLA Violation\"},{\"optionid\":\"10016\",\"optionvalue\":\"Product Defect\"},{\"optionid\":\"10017\",\"optionvalue\":\"Wrong item Received\"},{\"optionid\":\"10018\",\"optionvalue\":\"Refund Request\"},{\"optionid\":\"10019\",\"optionvalue\":\"New Feature Request\"},{\"optionid\":\"10020\",\"optionvalue\":\"UI/UX Suggestion\"},{\"optionid\":\"10021\",\"optionvalue\":\"Perfoemance Improvement\"},{\"optionid\":\"10022\",\"optionvalue\":\"Incorrect Changes\"},{\"optionid\":\"10023\",\"optionvalue\":\"Payment Not Processed\"}]",
             "groupvalue": {}
           },
           {
