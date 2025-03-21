@@ -7740,7 +7740,7 @@
           {
             "islookup": true,
             "masterid": "33337",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Internal and External\"}]",
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Internal\"},[{\"optionid\":\"1007\",\"optionvalue\":\"External\"}]",
             "groupvalue": {}
           },
           {
