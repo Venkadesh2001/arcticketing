@@ -7740,8 +7740,8 @@
           {
             "islookup": true,
             "masterid": "33337",
-            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"Internal\"},[{\"optionid\":\"1007\",\"optionvalue\":\"External\"}]",
-            "groupvalue": {}
+            "mastervalues": "[{\"optionid\":\"1007\",\"optionvalue\":\"External\"},{\"optionid\":\"1008\",\"optionvalue\":\"Internal\"}]" ,
+             "groupvalue": {}
           },
           {
             "islookup": true,
